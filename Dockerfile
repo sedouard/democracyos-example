@@ -18,6 +18,4 @@ VOLUME ["/data"]
 
 ADD . /data
 
-WORKDIR /data
-
-CMD cd /data; npm install; npm start
+EXPOSE 3000
