@@ -17,3 +17,7 @@ RUN apt-get install -y nodejs npm -y
 VOLUME ["/data"]
 
 ADD . /data
+
+WORKDIR /data
+
+CMD cd /data; npm install; npm start
